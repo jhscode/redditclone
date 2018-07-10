@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header.js';
+import Header from './Layouts/Header.js';
 
 class App extends React.Component {
   render() {
