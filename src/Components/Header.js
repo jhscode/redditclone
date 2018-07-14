@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Typography } from '@material-ui/core/';
 
 const Header = props => {
   return (
-    <AppBar position="static" color="red">
+    <AppBar position="static">
       <Toolbar>
         <Typography variant="headline" color="inherit">
           RedditClone

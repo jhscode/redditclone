@@ -1,12 +1,14 @@
-import React from 'react';
-import Header from './Layouts/Header.js';
+import React, { Fragment } from 'react';
+import Header from './Header';
+import Posts from './Posts';
 
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <Fragment>
         <Header />
-      </div>
+        <Posts />
+      </Fragment>
     );
   }
 }
