@@ -7,6 +7,14 @@ const style = {
 };
 
 class Posts extends React.Component {
+  handleClickHome = () => {
+    console.log('Home clicked');
+  };
+
+  handleClickPost = () => {
+    console.log('Post clicked!');
+  };
+
   render() {
     return (
       <Grid container>
@@ -18,14 +26,14 @@ class Posts extends React.Component {
             <Button
               variant="contained"
               color="secondary"
-              onclick={this.handleHome}
+              onClick={this.handleClickHome}
             >
               Home
             </Button>
             <Button
               variant="contained"
               color="primary"
-              onClick={this.handlePost}
+              onClick={this.handleClickPost}
             >
               Make A Post
             </Button>
