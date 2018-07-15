@@ -11,7 +11,7 @@ class App extends React.Component {
     return (
       <Fragment>
         <Header />
-        <Posts posts={this.posts} />
+        <Posts router={this.props.history.push} />
       </Fragment>
     );
   }

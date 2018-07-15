@@ -11,8 +11,8 @@ class Posts extends React.Component {
     console.log('Home clicked');
   };
 
-  handleClickPost = () => {
-    console.log('Post clicked!');
+  handleClickPost = props => {
+    this.props.router('/post');
   };
 
   render() {
