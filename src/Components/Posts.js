@@ -7,10 +7,6 @@ const style = {
 };
 
 class Posts extends React.Component {
-  handleClickHome = () => {
-    console.log('Home clicked');
-  };
-
   handleClickPost = props => {
     this.props.router('/post');
   };
@@ -23,13 +19,6 @@ class Posts extends React.Component {
         </Grid>
         <Grid item sm={4}>
           <Paper style={style.Paper}>
-            <Button
-              variant="contained"
-              color="secondary"
-              onClick={this.handleClickHome}
-            >
-              Home
-            </Button>
             <Button
               variant="contained"
               color="primary"
