@@ -3,11 +3,15 @@ import Header from './Header';
 import Posts from './Posts';
 
 class App extends React.Component {
+  state = {
+    posts: []
+  };
+
   render() {
     return (
       <Fragment>
         <Header />
-        <Posts />
+        <Posts posts={this.posts} />
       </Fragment>
     );
   }
