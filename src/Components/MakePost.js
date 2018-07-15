@@ -1,10 +1,11 @@
 import React from 'react';
+import { TextField } from '@material-ui/core';
 
 class MakePost extends React.Component {
   render() {
     return (
       <form>
-        <input type="text" placeholder="Title" />
+        <TextField id="title" label="Title" margin="normal" />
       </form>
     );
   }
