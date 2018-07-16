@@ -9,7 +9,7 @@ const style = {
 class Posts extends React.Component {
   render() {
     return (
-      <Grid container>
+      <Grid container spacing={16}>
         <Grid item xs={8}>
           <Paper style={style.Paper}>Summary Of Posts</Paper>
         </Grid>
