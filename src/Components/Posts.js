@@ -7,10 +7,6 @@ const style = {
 };
 
 class Posts extends React.Component {
-  handleClickPost = props => {
-    this.props.router('/post');
-  };
-
   render() {
     return (
       <Grid container>
@@ -19,13 +15,7 @@ class Posts extends React.Component {
         </Grid>
         <Grid item sm={4}>
           <Paper style={style.Paper}>
-            <Button
-              variant="contained"
-              color="primary"
-              onClick={this.handleClickPost}
-            >
-              Make A Post
-            </Button>
+            <MakePost />
           </Paper>
         </Grid>
       </Grid>

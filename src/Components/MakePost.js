@@ -1,24 +1,22 @@
-import React from 'react';
-import { TextField, Paper } from '@material-ui/core';
+import React, { Fragment } from 'react';
+import { TextField } from '@material-ui/core';
 
 class MakePost extends React.Component {
   render() {
     return (
-      <Paper>
-        <form>
-          <TextField id="title" label="Title" margin="normal" />
-          <br />
-          <TextField
-            id="textarea"
-            label="Comment"
-            placeholder="Comment"
-            multiline
-            fullwidth
-            rows="4"
-            margin="normal"
-          />
-        </form>
-      </Paper>
+      <form>
+        Make A Quick Post
+        <br />
+        <TextField id="title" label="Title" margin="normal" />
+        <br />
+        <TextField
+          id="textarea"
+          label="Comment"
+          multiline
+          rows="4"
+          margin="normal"
+        />
+      </form>
     );
   }
 }
