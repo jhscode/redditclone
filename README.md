@@ -1,1 +1,1 @@
-Reddit-style clone.
+Reddit-style clone using React and Material-UI.
